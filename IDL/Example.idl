@@ -17,18 +17,11 @@ module ExampleApp
 	
 	#pragma DCPS_DATA_TYPE "ExampleApp::Event"
 	#pragma DCPS_DATA_KEY "ExampleApp::Event kicker"
-	
-	enum EventType
-	{
-		RUN,
-		STOP,
-		STUCK
-	};
+
 	
 	struct Event
 	{
 		string kicker;
-		EventType event;
 		TimeBase::TimeT timestamp;
 	};
 };
