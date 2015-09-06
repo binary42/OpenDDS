@@ -2,5 +2,5 @@
 
 for files in ../IDL/*.idl;
 do
-~/DDS/bin/opendds_idl ../Source/Cpp/Generated/ $files
+~/Development/DDS/bin/opendds_idl ../Source/Cpp/Generated/ $files
 done

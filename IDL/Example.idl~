@@ -20,9 +20,9 @@ module ExampleApp
 	
 	enum EventType
 	{
-		RUN,
-		STOP,
-		STUCK
+		Run,
+		Stop,
+		Stuck
 	};
 	
 	struct Event
