@@ -29,8 +29,8 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:652
 
-#ifndef _TAO_IDL_EXAMPLES_QPHEQB_CPP_
-#define _TAO_IDL_EXAMPLES_QPHEQB_CPP_
+#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__EXAMPLES_OBTVI6_CPP_
+#define _TAO_IDL____SOURCE_CPP_GENERATED__EXAMPLES_OBTVI6_CPP_
 
 
 #include "ExampleS.h"

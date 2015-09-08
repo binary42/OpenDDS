@@ -2,24 +2,17 @@
 
 for files in ../IDL/*.idl;
 do
-	~/Development/DDS/bin/opendds_idl $files
+	cp $files ../Source/Cpp/IDL
+	
+	opendds_idl -o ../Source/Cpp/Generated/ $files
 done
 
-tao_idl -I$DDS_ROOT -I$TAO_ROOT/orbsvcs ../IDL/*.idl
-
-for files in Scripts/;
+for files in ../IDL/*.idl;
 do
-	mv *.h ../Source/Cpp/Generated/
-	mv *.cpp ../Source/Cpp/Generated/
-	mv *.inl ../Source/Cpp/Generated/
-	mv *TypeSupport* ../Source/Cpp/Generated/
+	tao_idl -I$DDS_ROOT -I$TAO_ROOT/orbsvcs -o ../Source/Cpp/Generated/ $files
 done
 
-tao_idl -I$DDS_ROOT -I$TAO_ROOT/orbsvcs ../Source/Cpp/Generated/*TypeSupport.idl
-
-for files in Scripts/;
+for files in ../Source/Cpp/Generated/*.idl;
 do
-	mv *.h ../Source/Cpp/Generated/
-	mv *.cpp ../Source/Cpp/Generated/
-	mv *.inl ../Source/Cpp/Generated/
+	tao_idl -I$DDS_ROOT -I$TAO_ROOT/orbsvcs -o ../Source/Cpp/Generated/ $files
 done
