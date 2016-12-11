@@ -1,0 +1,28 @@
+#include "orbsvcs/TimeBase.idl"
+
+module ExampleApp
+{
+	#pragma DCPS_DATA_TYPE "ExampleApp::Thing"
+	#pragma DCPS_DATA_KEY "ExampleApp::Thing name"
+	
+	struct Data
+	{
+		string name;
+		string test;
+		
+		double value;
+		
+		TimeBase::TimeT timestamp;
+	};
+	
+	#pragma DCPS_DATA_TYPE "ExampleApp::Event"
+	#pragma DCPS_DATA_KEY "ExampleApp::Event kicker"
+
+	
+	struct Event
+	{
+		string kicker;
+		TimeBase::TimeT timestamp;
+	};
+};
+	 
