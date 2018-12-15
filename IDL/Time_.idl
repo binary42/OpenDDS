@@ -1,0 +1,26 @@
+module builtin_interfaces
+{
+
+module msg
+{
+
+module dds_
+{
+
+
+#pragma DCPS_DATA_TYPE "builtin_interfaces::msg::dds_::Time_"
+
+struct Time_
+{
+
+  long sec_;
+  unsigned long nanosec_;
+
+};  // struct Time_
+
+
+};  // module dds_
+
+};  // module msg
+
+};  // module builtin_interfaces

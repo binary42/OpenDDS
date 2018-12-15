@@ -1,0 +1,29 @@
+#include "Header_.idl"
+
+module sensor_msgs
+{
+
+module msg
+{
+
+module dds_
+{
+
+#pragma DCPS_DATA_TYPE "sensor_msgs::msg::dds_::Fluidpressure_"
+
+
+struct FluidPressure_
+{
+
+  std_msgs::msg::dds_::Header_ header_;
+  double fluid_pressure_;
+  double variance_;
+
+};  // struct FluidPressure_
+
+
+};  // module dds_
+
+};  // module msg
+
+};  // module sensor_msgs

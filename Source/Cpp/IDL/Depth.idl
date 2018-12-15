@@ -1,0 +1,32 @@
+#include "FluidPressure_.idl"
+
+module orov
+{
+    const octet WATER_TYPE_FRESH    = 0;
+    const octet WATER_TYPE_BRACKISH = 1;
+    const octet WATER_TYPE_SALT     = 2;
+    const octet WATER_TYPE_COUNT    = 3;
+
+	#pragma DCPS_DATA_TYPE "orov::Depth"
+	#pragma DCPS_DATA_KEY "orov::Depth id"
+
+    struct Depth
+    {
+        sensor_msgs::msg::dds_::FluidPressure_ pressure;
+        string id;      //@key
+        float depth;    // Unit: meters
+    };
+    
+    #pragma DCPS_DATA_TYPE "orov::DepthConfig"
+    #pragma DCPS_DATA_KEY "orov::DepthConfig id"
+
+    // TODO: Use in trident-control
+    struct DepthConfig
+    {
+        string id;                      //@key
+        octet water_type;               // See Above. Determines which constant to use for depth calculations
+        boolean	user_offset_enabled;
+        float	zero_offset;            // Determined by entity at startup. Used as the zero point to offset depth calculated from sensor outputs. Unit: meters
+        float	zero_offset_user;       // Zero offset provided by user to override the initially determined value. Unit: meters
+    };
+};
