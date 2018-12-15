@@ -28,8 +28,8 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:461
 
-#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__DEPTHS_IO1V2I_H_
-#define _TAO_IDL____SOURCE_CPP_GENERATED__DEPTHS_IO1V2I_H_
+#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__DEPTHS_JS6GY5_H_
+#define _TAO_IDL____SOURCE_CPP_GENERATED__DEPTHS_JS6GY5_H_
 
 
 #include "DepthC.h"

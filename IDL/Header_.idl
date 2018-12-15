@@ -10,7 +10,7 @@ module dds_
 {
 
 
-
+#pragma DCPS_DATA_TYPE "std_msgs::msg::dds_::Header_"
 
 struct Header_
 {

@@ -28,8 +28,8 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:152
 
-#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__DEPTHC_HEBAPQ_H_
-#define _TAO_IDL____SOURCE_CPP_GENERATED__DEPTHC_HEBAPQ_H_
+#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__DEPTHC_28OXOT_H_
+#define _TAO_IDL____SOURCE_CPP_GENERATED__DEPTHC_28OXOT_H_
 
 
 #include /**/ "ace/config-all.h"
@@ -126,7 +126,7 @@ namespace orov
     
     sensor_msgs::msg::dds_::FluidPressure_ pressure;
     ::TAO::String_Manager id;
-    ::CORBA::Float depths;
+    ::CORBA::Float depth;
   };
 
   // TAO_IDL - Generated from

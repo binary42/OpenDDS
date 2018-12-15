@@ -29,8 +29,8 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:652
 
-#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__TIME_S_NWYDMB_CPP_
-#define _TAO_IDL____SOURCE_CPP_GENERATED__TIME_S_NWYDMB_CPP_
+#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__TIME_S_DPTVOT_CPP_
+#define _TAO_IDL____SOURCE_CPP_GENERATED__TIME_S_DPTVOT_CPP_
 
 
 #include "Time_S.h"

@@ -28,8 +28,8 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:461
 
-#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__HEADER_S_MXIWUZ_H_
-#define _TAO_IDL____SOURCE_CPP_GENERATED__HEADER_S_MXIWUZ_H_
+#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__HEADER_S_RMJOJ9_H_
+#define _TAO_IDL____SOURCE_CPP_GENERATED__HEADER_S_RMJOJ9_H_
 
 
 #include "Header_C.h"

@@ -28,8 +28,8 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:461
 
-#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__TIME_S_NWYDMB_H_
-#define _TAO_IDL____SOURCE_CPP_GENERATED__TIME_S_NWYDMB_H_
+#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__TIME_S_DPTVOT_H_
+#define _TAO_IDL____SOURCE_CPP_GENERATED__TIME_S_DPTVOT_H_
 
 
 #include "Time_C.h"

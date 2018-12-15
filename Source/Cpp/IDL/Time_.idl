@@ -8,7 +8,7 @@ module dds_
 {
 
 
-
+#pragma DCPS_DATA_TYPE "builtin_interfaces::msg::dds_::Time_"
 
 struct Time_
 {

@@ -33,10 +33,972 @@
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
+#include "tao/AnyTypeCode/Objref_TypeCode_Static.h"
+#include "tao/AnyTypeCode/Sequence_TypeCode_Static.h"
 #include "tao/CDR.h"
 #include "tao/CDR.h"
+#include "tao/AnyTypeCode/Any.h"
+#include "tao/AnyTypeCode/Any_Impl_T.h"
+#include "tao/AnyTypeCode/Any_Dual_Impl_T.h"
+#include "ace/OS_NS_string.h"
 
 #if !defined (__ACE_INLINE__)
 #include "Header_TypeSupportC.inl"
 #endif /* !defined INLINE */
+
+// TAO_IDL - Generated from
+// be/be_visitor_typecode/alias_typecode.cpp:51
+
+
+
+// TAO_IDL - Generated from
+// be/be_visitor_typecode/typecode_defn.cpp:464
+
+
+#ifndef _TAO_TYPECODE_std_msgs_msg_dds__Header_Seq_GUARD
+#define _TAO_TYPECODE_std_msgs_msg_dds__Header_Seq_GUARD
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+namespace TAO
+{
+  namespace TypeCode
+  {
+    namespace
+    {
+      TAO::TypeCode::Sequence< ::CORBA::TypeCode_ptr const *,
+                              TAO::Null_RefCount_Policy>
+        std_msgs_msg_dds__Header_Seq_0 (
+          ::CORBA::tk_sequence,
+          &std_msgs::msg::dds_::_tc_Header_,
+          0U);
+        
+      ::CORBA::TypeCode_ptr const tc_std_msgs_msg_dds__Header_Seq_0 =
+        &std_msgs_msg_dds__Header_Seq_0;
+    }
+  }
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+#endif /* _TAO_TYPECODE_std_msgs_msg_dds__Header_Seq_GUARD */
+
+static TAO::TypeCode::Alias<char const *,
+                            ::CORBA::TypeCode_ptr const *,
+                            TAO::Null_RefCount_Policy>
+  _tao_tc_std_msgs_msg_dds__Header_Seq (
+    ::CORBA::tk_alias,
+    "IDL:std_msgs/msg/dds_/Header_Seq:1.0",
+    "Header_Seq",
+    &TAO::TypeCode::tc_std_msgs_msg_dds__Header_Seq_0);
+  
+
+namespace std_msgs
+{
+  
+  namespace msg
+  {
+    
+    namespace dds_
+    {
+      ::CORBA::TypeCode_ptr const _tc_Header_Seq =
+        &_tao_tc_std_msgs_msg_dds__Header_Seq;
+    }
+  }
+}
+
+// TAO_IDL - Generated from
+// be/be_visitor_interface/interface_cs.cpp:51
+
+// Traits specializations for std_msgs::msg::dds_::Header_TypeSupport.
+
+std_msgs::msg::dds_::Header_TypeSupport_ptr
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_TypeSupport>::duplicate (
+    std_msgs::msg::dds_::Header_TypeSupport_ptr p)
+{
+  return std_msgs::msg::dds_::Header_TypeSupport::_duplicate (p);
+}
+
+void
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_TypeSupport>::release (
+    std_msgs::msg::dds_::Header_TypeSupport_ptr p)
+{
+  ::CORBA::release (p);
+}
+
+std_msgs::msg::dds_::Header_TypeSupport_ptr
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_TypeSupport>::nil (void)
+{
+  return std_msgs::msg::dds_::Header_TypeSupport::_nil ();
+}
+
+::CORBA::Boolean
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_TypeSupport>::marshal (
+    const std_msgs::msg::dds_::Header_TypeSupport_ptr p,
+    TAO_OutputCDR & cdr)
+{
+  return ::CORBA::Object::marshal (p, cdr);
+}
+
+std_msgs::msg::dds_::Header_TypeSupport::Header_TypeSupport (void)
+{}
+
+std_msgs::msg::dds_::Header_TypeSupport::~Header_TypeSupport (void)
+{
+}
+
+void
+std_msgs::msg::dds_::Header_TypeSupport::_tao_any_destructor (void *_tao_void_pointer)
+{
+  Header_TypeSupport *_tao_tmp_pointer =
+    static_cast<Header_TypeSupport *> (_tao_void_pointer);
+  ::CORBA::release (_tao_tmp_pointer);
+}
+
+std_msgs::msg::dds_::Header_TypeSupport_ptr
+std_msgs::msg::dds_::Header_TypeSupport::_narrow (
+    ::CORBA::Object_ptr _tao_objref)
+{
+  return Header_TypeSupport::_duplicate (
+      dynamic_cast<Header_TypeSupport_ptr> (_tao_objref)
+    );
+}
+
+std_msgs::msg::dds_::Header_TypeSupport_ptr
+std_msgs::msg::dds_::Header_TypeSupport::_unchecked_narrow (
+    ::CORBA::Object_ptr _tao_objref)
+{
+  return Header_TypeSupport::_duplicate (
+      dynamic_cast<Header_TypeSupport_ptr> (_tao_objref)
+    );
+}
+
+std_msgs::msg::dds_::Header_TypeSupport_ptr
+std_msgs::msg::dds_::Header_TypeSupport::_nil (void)
+{
+  return 0;
+}
+
+std_msgs::msg::dds_::Header_TypeSupport_ptr
+std_msgs::msg::dds_::Header_TypeSupport::_duplicate (Header_TypeSupport_ptr obj)
+{
+  if (! ::CORBA::is_nil (obj))
+    {
+      obj->_add_ref ();
+    }
+  return obj;
+}
+
+void
+std_msgs::msg::dds_::Header_TypeSupport::_tao_release (Header_TypeSupport_ptr obj)
+{
+  ::CORBA::release (obj);
+}
+
+::CORBA::Boolean
+std_msgs::msg::dds_::Header_TypeSupport::_is_a (const char *value)
+{
+  if (
+      ACE_OS::strcmp (
+          value,
+          "IDL:DDS/TypeSupport:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:OpenDDS/DCPS/TypeSupport:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:std_msgs/msg/dds_/Header_TypeSupport:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:omg.org/CORBA/LocalObject:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:omg.org/CORBA/Object:1.0"
+        ) == 0
+    )
+    {
+      return true; // success using local knowledge
+    }
+  else
+    {
+      return false;
+    }
+}
+
+const char* std_msgs::msg::dds_::Header_TypeSupport::_interface_repository_id (void) const
+{
+  return "IDL:std_msgs/msg/dds_/Header_TypeSupport:1.0";
+}
+
+::CORBA::Boolean
+std_msgs::msg::dds_::Header_TypeSupport::marshal (TAO_OutputCDR & /* cdr */)
+{
+  return false;
+}
+
+// TAO_IDL - Generated from
+// be/be_visitor_typecode/objref_typecode.cpp:72
+
+static TAO::TypeCode::Objref<char const *,
+                             TAO::Null_RefCount_Policy>
+  _tao_tc_std_msgs_msg_dds__Header_TypeSupport (
+    ::CORBA::tk_local_interface,
+    "IDL:std_msgs/msg/dds_/Header_TypeSupport:1.0",
+    "Header_TypeSupport");
+  
+
+namespace std_msgs
+{
+  
+  namespace msg
+  {
+    
+    namespace dds_
+    {
+      ::CORBA::TypeCode_ptr const _tc_Header_TypeSupport =
+        &_tao_tc_std_msgs_msg_dds__Header_TypeSupport;
+    }
+  }
+}
+
+// TAO_IDL - Generated from
+// be/be_visitor_interface/interface_cs.cpp:51
+
+// Traits specializations for std_msgs::msg::dds_::Header_DataWriter.
+
+std_msgs::msg::dds_::Header_DataWriter_ptr
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_DataWriter>::duplicate (
+    std_msgs::msg::dds_::Header_DataWriter_ptr p)
+{
+  return std_msgs::msg::dds_::Header_DataWriter::_duplicate (p);
+}
+
+void
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_DataWriter>::release (
+    std_msgs::msg::dds_::Header_DataWriter_ptr p)
+{
+  ::CORBA::release (p);
+}
+
+std_msgs::msg::dds_::Header_DataWriter_ptr
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_DataWriter>::nil (void)
+{
+  return std_msgs::msg::dds_::Header_DataWriter::_nil ();
+}
+
+::CORBA::Boolean
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_DataWriter>::marshal (
+    const std_msgs::msg::dds_::Header_DataWriter_ptr p,
+    TAO_OutputCDR & cdr)
+{
+  return ::CORBA::Object::marshal (p, cdr);
+}
+
+std_msgs::msg::dds_::Header_DataWriter::Header_DataWriter (void)
+{}
+
+std_msgs::msg::dds_::Header_DataWriter::~Header_DataWriter (void)
+{
+}
+
+void
+std_msgs::msg::dds_::Header_DataWriter::_tao_any_destructor (void *_tao_void_pointer)
+{
+  Header_DataWriter *_tao_tmp_pointer =
+    static_cast<Header_DataWriter *> (_tao_void_pointer);
+  ::CORBA::release (_tao_tmp_pointer);
+}
+
+std_msgs::msg::dds_::Header_DataWriter_ptr
+std_msgs::msg::dds_::Header_DataWriter::_narrow (
+    ::CORBA::Object_ptr _tao_objref)
+{
+  return Header_DataWriter::_duplicate (
+      dynamic_cast<Header_DataWriter_ptr> (_tao_objref)
+    );
+}
+
+std_msgs::msg::dds_::Header_DataWriter_ptr
+std_msgs::msg::dds_::Header_DataWriter::_unchecked_narrow (
+    ::CORBA::Object_ptr _tao_objref)
+{
+  return Header_DataWriter::_duplicate (
+      dynamic_cast<Header_DataWriter_ptr> (_tao_objref)
+    );
+}
+
+std_msgs::msg::dds_::Header_DataWriter_ptr
+std_msgs::msg::dds_::Header_DataWriter::_nil (void)
+{
+  return 0;
+}
+
+std_msgs::msg::dds_::Header_DataWriter_ptr
+std_msgs::msg::dds_::Header_DataWriter::_duplicate (Header_DataWriter_ptr obj)
+{
+  if (! ::CORBA::is_nil (obj))
+    {
+      obj->_add_ref ();
+    }
+  return obj;
+}
+
+void
+std_msgs::msg::dds_::Header_DataWriter::_tao_release (Header_DataWriter_ptr obj)
+{
+  ::CORBA::release (obj);
+}
+
+::CORBA::Boolean
+std_msgs::msg::dds_::Header_DataWriter::_is_a (const char *value)
+{
+  if (
+      ACE_OS::strcmp (
+          value,
+          "IDL:DDS/Entity:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:DDS/DataWriter:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:std_msgs/msg/dds_/Header_DataWriter:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:omg.org/CORBA/LocalObject:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:omg.org/CORBA/Object:1.0"
+        ) == 0
+    )
+    {
+      return true; // success using local knowledge
+    }
+  else
+    {
+      return false;
+    }
+}
+
+const char* std_msgs::msg::dds_::Header_DataWriter::_interface_repository_id (void) const
+{
+  return "IDL:std_msgs/msg/dds_/Header_DataWriter:1.0";
+}
+
+::CORBA::Boolean
+std_msgs::msg::dds_::Header_DataWriter::marshal (TAO_OutputCDR & /* cdr */)
+{
+  return false;
+}
+
+// TAO_IDL - Generated from
+// be/be_visitor_typecode/objref_typecode.cpp:72
+
+static TAO::TypeCode::Objref<char const *,
+                             TAO::Null_RefCount_Policy>
+  _tao_tc_std_msgs_msg_dds__Header_DataWriter (
+    ::CORBA::tk_local_interface,
+    "IDL:std_msgs/msg/dds_/Header_DataWriter:1.0",
+    "Header_DataWriter");
+  
+
+namespace std_msgs
+{
+  
+  namespace msg
+  {
+    
+    namespace dds_
+    {
+      ::CORBA::TypeCode_ptr const _tc_Header_DataWriter =
+        &_tao_tc_std_msgs_msg_dds__Header_DataWriter;
+    }
+  }
+}
+
+// TAO_IDL - Generated from
+// be/be_visitor_interface/interface_cs.cpp:51
+
+// Traits specializations for std_msgs::msg::dds_::Header_DataReader.
+
+std_msgs::msg::dds_::Header_DataReader_ptr
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_DataReader>::duplicate (
+    std_msgs::msg::dds_::Header_DataReader_ptr p)
+{
+  return std_msgs::msg::dds_::Header_DataReader::_duplicate (p);
+}
+
+void
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_DataReader>::release (
+    std_msgs::msg::dds_::Header_DataReader_ptr p)
+{
+  ::CORBA::release (p);
+}
+
+std_msgs::msg::dds_::Header_DataReader_ptr
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_DataReader>::nil (void)
+{
+  return std_msgs::msg::dds_::Header_DataReader::_nil ();
+}
+
+::CORBA::Boolean
+TAO::Objref_Traits<std_msgs::msg::dds_::Header_DataReader>::marshal (
+    const std_msgs::msg::dds_::Header_DataReader_ptr p,
+    TAO_OutputCDR & cdr)
+{
+  return ::CORBA::Object::marshal (p, cdr);
+}
+
+std_msgs::msg::dds_::Header_DataReader::Header_DataReader (void)
+{}
+
+std_msgs::msg::dds_::Header_DataReader::~Header_DataReader (void)
+{
+}
+
+void
+std_msgs::msg::dds_::Header_DataReader::_tao_any_destructor (void *_tao_void_pointer)
+{
+  Header_DataReader *_tao_tmp_pointer =
+    static_cast<Header_DataReader *> (_tao_void_pointer);
+  ::CORBA::release (_tao_tmp_pointer);
+}
+
+std_msgs::msg::dds_::Header_DataReader_ptr
+std_msgs::msg::dds_::Header_DataReader::_narrow (
+    ::CORBA::Object_ptr _tao_objref)
+{
+  return Header_DataReader::_duplicate (
+      dynamic_cast<Header_DataReader_ptr> (_tao_objref)
+    );
+}
+
+std_msgs::msg::dds_::Header_DataReader_ptr
+std_msgs::msg::dds_::Header_DataReader::_unchecked_narrow (
+    ::CORBA::Object_ptr _tao_objref)
+{
+  return Header_DataReader::_duplicate (
+      dynamic_cast<Header_DataReader_ptr> (_tao_objref)
+    );
+}
+
+std_msgs::msg::dds_::Header_DataReader_ptr
+std_msgs::msg::dds_::Header_DataReader::_nil (void)
+{
+  return 0;
+}
+
+std_msgs::msg::dds_::Header_DataReader_ptr
+std_msgs::msg::dds_::Header_DataReader::_duplicate (Header_DataReader_ptr obj)
+{
+  if (! ::CORBA::is_nil (obj))
+    {
+      obj->_add_ref ();
+    }
+  return obj;
+}
+
+void
+std_msgs::msg::dds_::Header_DataReader::_tao_release (Header_DataReader_ptr obj)
+{
+  ::CORBA::release (obj);
+}
+
+::CORBA::Boolean
+std_msgs::msg::dds_::Header_DataReader::_is_a (const char *value)
+{
+  if (
+      ACE_OS::strcmp (
+          value,
+          "IDL:DDS/Entity:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:DDS/DataReader:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:OpenDDS/DCPS/DataReaderEx:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:std_msgs/msg/dds_/Header_DataReader:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:omg.org/CORBA/LocalObject:1.0"
+        ) == 0 ||
+      ACE_OS::strcmp (
+          value,
+          "IDL:omg.org/CORBA/Object:1.0"
+        ) == 0
+    )
+    {
+      return true; // success using local knowledge
+    }
+  else
+    {
+      return false;
+    }
+}
+
+const char* std_msgs::msg::dds_::Header_DataReader::_interface_repository_id (void) const
+{
+  return "IDL:std_msgs/msg/dds_/Header_DataReader:1.0";
+}
+
+::CORBA::Boolean
+std_msgs::msg::dds_::Header_DataReader::marshal (TAO_OutputCDR & /* cdr */)
+{
+  return false;
+}
+
+// TAO_IDL - Generated from
+// be/be_visitor_typecode/objref_typecode.cpp:72
+
+static TAO::TypeCode::Objref<char const *,
+                             TAO::Null_RefCount_Policy>
+  _tao_tc_std_msgs_msg_dds__Header_DataReader (
+    ::CORBA::tk_local_interface,
+    "IDL:std_msgs/msg/dds_/Header_DataReader:1.0",
+    "Header_DataReader");
+  
+
+namespace std_msgs
+{
+  
+  namespace msg
+  {
+    
+    namespace dds_
+    {
+      ::CORBA::TypeCode_ptr const _tc_Header_DataReader =
+        &_tao_tc_std_msgs_msg_dds__Header_DataReader;
+    }
+  }
+}
+
+// TAO_IDL - Generated from
+// be/be_visitor_interface/any_op_cs.cpp:41
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+
+
+namespace TAO
+{
+  template<>
+  ::CORBA::Boolean
+  Any_Impl_T<std_msgs::msg::dds_::Header_TypeSupport>::to_object (
+      ::CORBA::Object_ptr &_tao_elem) const
+  {
+    _tao_elem = ::CORBA::Object::_duplicate (this->value_);
+    return true;
+  }
+}
+
+namespace TAO
+{
+  template<>
+  ::CORBA::Boolean
+  Any_Impl_T<std_msgs::msg::dds_::Header_TypeSupport>::marshal_value (TAO_OutputCDR &)
+  {
+    return false;
+  }
+
+  template<>
+  ::CORBA::Boolean
+  Any_Impl_T<std_msgs::msg::dds_::Header_TypeSupport>::demarshal_value (TAO_InputCDR &)
+  {
+    return false;
+  }
+}
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+
+
+#if defined (ACE_ANY_OPS_USE_NAMESPACE)
+
+namespace std_msgs
+{
+  
+  namespace msg
+  {
+    
+    namespace dds_
+    {
+      
+
+      /// Copying insertion.
+      void
+      operator<<= (
+          ::CORBA::Any &_tao_any,
+          Header_TypeSupport_ptr _tao_elem)
+      {
+        Header_TypeSupport_ptr _tao_objptr =
+          Header_TypeSupport::_duplicate (_tao_elem);
+        _tao_any <<= &_tao_objptr;
+      }
+
+      /// Non-copying insertion.
+      void
+      operator<<= (
+          ::CORBA::Any &_tao_any,
+          Header_TypeSupport_ptr *_tao_elem)
+      {
+        TAO::Any_Impl_T<Header_TypeSupport>::insert (
+            _tao_any,
+            Header_TypeSupport::_tao_any_destructor,
+            _tc_Header_TypeSupport,
+            *_tao_elem);
+      }
+
+      ::CORBA::Boolean
+      operator>>= (
+          const ::CORBA::Any &_tao_any,
+          Header_TypeSupport_ptr &_tao_elem)
+      {
+        return
+          TAO::Any_Impl_T<Header_TypeSupport>::extract (
+              _tao_any,
+              Header_TypeSupport::_tao_any_destructor,
+              _tc_Header_TypeSupport,
+              _tao_elem);
+      }
+    }
+  }
+}
+
+#else
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+
+
+/// Copying insertion.
+void
+operator<<= (
+    ::CORBA::Any &_tao_any,
+    std_msgs::msg::dds_::Header_TypeSupport_ptr _tao_elem)
+{
+  std_msgs::msg::dds_::Header_TypeSupport_ptr _tao_objptr =
+    std_msgs::msg::dds_::Header_TypeSupport::_duplicate (_tao_elem);
+  _tao_any <<= &_tao_objptr;
+}
+
+/// Non-copying insertion.
+void
+operator<<= (
+    ::CORBA::Any &_tao_any,
+    std_msgs::msg::dds_::Header_TypeSupport_ptr *_tao_elem)
+{
+  TAO::Any_Impl_T<std_msgs::msg::dds_::Header_TypeSupport>::insert (
+      _tao_any,
+      std_msgs::msg::dds_::Header_TypeSupport::_tao_any_destructor,
+      std_msgs::msg::dds_::_tc_Header_TypeSupport,
+      *_tao_elem);
+}
+
+::CORBA::Boolean
+operator>>= (
+    const ::CORBA::Any &_tao_any,
+    std_msgs::msg::dds_::Header_TypeSupport_ptr &_tao_elem)
+{
+  return
+    TAO::Any_Impl_T<std_msgs::msg::dds_::Header_TypeSupport>::extract (
+        _tao_any,
+        std_msgs::msg::dds_::Header_TypeSupport::_tao_any_destructor,
+        std_msgs::msg::dds_::_tc_Header_TypeSupport,
+        _tao_elem);
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+
+
+#endif
+
+// TAO_IDL - Generated from
+// be/be_visitor_interface/any_op_cs.cpp:41
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+
+
+namespace TAO
+{
+  template<>
+  ::CORBA::Boolean
+  Any_Impl_T<std_msgs::msg::dds_::Header_DataWriter>::to_object (
+      ::CORBA::Object_ptr &_tao_elem) const
+  {
+    _tao_elem = ::CORBA::Object::_duplicate (this->value_);
+    return true;
+  }
+}
+
+namespace TAO
+{
+  template<>
+  ::CORBA::Boolean
+  Any_Impl_T<std_msgs::msg::dds_::Header_DataWriter>::marshal_value (TAO_OutputCDR &)
+  {
+    return false;
+  }
+
+  template<>
+  ::CORBA::Boolean
+  Any_Impl_T<std_msgs::msg::dds_::Header_DataWriter>::demarshal_value (TAO_InputCDR &)
+  {
+    return false;
+  }
+}
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+
+
+#if defined (ACE_ANY_OPS_USE_NAMESPACE)
+
+namespace std_msgs
+{
+  
+  namespace msg
+  {
+    
+    namespace dds_
+    {
+      
+
+      /// Copying insertion.
+      void
+      operator<<= (
+          ::CORBA::Any &_tao_any,
+          Header_DataWriter_ptr _tao_elem)
+      {
+        Header_DataWriter_ptr _tao_objptr =
+          Header_DataWriter::_duplicate (_tao_elem);
+        _tao_any <<= &_tao_objptr;
+      }
+
+      /// Non-copying insertion.
+      void
+      operator<<= (
+          ::CORBA::Any &_tao_any,
+          Header_DataWriter_ptr *_tao_elem)
+      {
+        TAO::Any_Impl_T<Header_DataWriter>::insert (
+            _tao_any,
+            Header_DataWriter::_tao_any_destructor,
+            _tc_Header_DataWriter,
+            *_tao_elem);
+      }
+
+      ::CORBA::Boolean
+      operator>>= (
+          const ::CORBA::Any &_tao_any,
+          Header_DataWriter_ptr &_tao_elem)
+      {
+        return
+          TAO::Any_Impl_T<Header_DataWriter>::extract (
+              _tao_any,
+              Header_DataWriter::_tao_any_destructor,
+              _tc_Header_DataWriter,
+              _tao_elem);
+      }
+    }
+  }
+}
+
+#else
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+
+
+/// Copying insertion.
+void
+operator<<= (
+    ::CORBA::Any &_tao_any,
+    std_msgs::msg::dds_::Header_DataWriter_ptr _tao_elem)
+{
+  std_msgs::msg::dds_::Header_DataWriter_ptr _tao_objptr =
+    std_msgs::msg::dds_::Header_DataWriter::_duplicate (_tao_elem);
+  _tao_any <<= &_tao_objptr;
+}
+
+/// Non-copying insertion.
+void
+operator<<= (
+    ::CORBA::Any &_tao_any,
+    std_msgs::msg::dds_::Header_DataWriter_ptr *_tao_elem)
+{
+  TAO::Any_Impl_T<std_msgs::msg::dds_::Header_DataWriter>::insert (
+      _tao_any,
+      std_msgs::msg::dds_::Header_DataWriter::_tao_any_destructor,
+      std_msgs::msg::dds_::_tc_Header_DataWriter,
+      *_tao_elem);
+}
+
+::CORBA::Boolean
+operator>>= (
+    const ::CORBA::Any &_tao_any,
+    std_msgs::msg::dds_::Header_DataWriter_ptr &_tao_elem)
+{
+  return
+    TAO::Any_Impl_T<std_msgs::msg::dds_::Header_DataWriter>::extract (
+        _tao_any,
+        std_msgs::msg::dds_::Header_DataWriter::_tao_any_destructor,
+        std_msgs::msg::dds_::_tc_Header_DataWriter,
+        _tao_elem);
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+
+
+#endif
+
+// TAO_IDL - Generated from
+// be/be_visitor_interface/any_op_cs.cpp:41
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+
+
+namespace TAO
+{
+  template<>
+  ::CORBA::Boolean
+  Any_Impl_T<std_msgs::msg::dds_::Header_DataReader>::to_object (
+      ::CORBA::Object_ptr &_tao_elem) const
+  {
+    _tao_elem = ::CORBA::Object::_duplicate (this->value_);
+    return true;
+  }
+}
+
+namespace TAO
+{
+  template<>
+  ::CORBA::Boolean
+  Any_Impl_T<std_msgs::msg::dds_::Header_DataReader>::marshal_value (TAO_OutputCDR &)
+  {
+    return false;
+  }
+
+  template<>
+  ::CORBA::Boolean
+  Any_Impl_T<std_msgs::msg::dds_::Header_DataReader>::demarshal_value (TAO_InputCDR &)
+  {
+    return false;
+  }
+}
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+
+
+#if defined (ACE_ANY_OPS_USE_NAMESPACE)
+
+namespace std_msgs
+{
+  
+  namespace msg
+  {
+    
+    namespace dds_
+    {
+      
+
+      /// Copying insertion.
+      void
+      operator<<= (
+          ::CORBA::Any &_tao_any,
+          Header_DataReader_ptr _tao_elem)
+      {
+        Header_DataReader_ptr _tao_objptr =
+          Header_DataReader::_duplicate (_tao_elem);
+        _tao_any <<= &_tao_objptr;
+      }
+
+      /// Non-copying insertion.
+      void
+      operator<<= (
+          ::CORBA::Any &_tao_any,
+          Header_DataReader_ptr *_tao_elem)
+      {
+        TAO::Any_Impl_T<Header_DataReader>::insert (
+            _tao_any,
+            Header_DataReader::_tao_any_destructor,
+            _tc_Header_DataReader,
+            *_tao_elem);
+      }
+
+      ::CORBA::Boolean
+      operator>>= (
+          const ::CORBA::Any &_tao_any,
+          Header_DataReader_ptr &_tao_elem)
+      {
+        return
+          TAO::Any_Impl_T<Header_DataReader>::extract (
+              _tao_any,
+              Header_DataReader::_tao_any_destructor,
+              _tc_Header_DataReader,
+              _tao_elem);
+      }
+    }
+  }
+}
+
+#else
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+
+
+/// Copying insertion.
+void
+operator<<= (
+    ::CORBA::Any &_tao_any,
+    std_msgs::msg::dds_::Header_DataReader_ptr _tao_elem)
+{
+  std_msgs::msg::dds_::Header_DataReader_ptr _tao_objptr =
+    std_msgs::msg::dds_::Header_DataReader::_duplicate (_tao_elem);
+  _tao_any <<= &_tao_objptr;
+}
+
+/// Non-copying insertion.
+void
+operator<<= (
+    ::CORBA::Any &_tao_any,
+    std_msgs::msg::dds_::Header_DataReader_ptr *_tao_elem)
+{
+  TAO::Any_Impl_T<std_msgs::msg::dds_::Header_DataReader>::insert (
+      _tao_any,
+      std_msgs::msg::dds_::Header_DataReader::_tao_any_destructor,
+      std_msgs::msg::dds_::_tc_Header_DataReader,
+      *_tao_elem);
+}
+
+::CORBA::Boolean
+operator>>= (
+    const ::CORBA::Any &_tao_any,
+    std_msgs::msg::dds_::Header_DataReader_ptr &_tao_elem)
+{
+  return
+    TAO::Any_Impl_T<std_msgs::msg::dds_::Header_DataReader>::extract (
+        _tao_any,
+        std_msgs::msg::dds_::Header_DataReader::_tao_any_destructor,
+        std_msgs::msg::dds_::_tc_Header_DataReader,
+        _tao_elem);
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+
+
+#endif
 

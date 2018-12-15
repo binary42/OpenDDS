@@ -14,7 +14,7 @@ module orov
     {
         sensor_msgs::msg::dds_::FluidPressure_ pressure;
         string id;      //@key
-        float depths;    // Unit: meters
+        float depth;    // Unit: meters
     };
     
     #pragma DCPS_DATA_TYPE "orov::DepthConfig"

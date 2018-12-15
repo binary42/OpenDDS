@@ -28,12 +28,17 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:461
 
-#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__TIME_TYPESUPPORTS_2X5HDV_H_
-#define _TAO_IDL____SOURCE_CPP_GENERATED__TIME_TYPESUPPORTS_2X5HDV_H_
+#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__TIME_TYPESUPPORTS_UDQ7GH_H_
+#define _TAO_IDL____SOURCE_CPP_GENERATED__TIME_TYPESUPPORTS_UDQ7GH_H_
 
 
 #include "Time_TypeSupportC.h"
 #include "Time_S.h"
+#include "dds/DdsDcpsInfrastructureS.h"
+#include "dds/DdsDcpsPublicationS.h"
+#include "dds/DdsDcpsSubscriptionExtS.h"
+#include "dds/DdsDcpsTopicS.h"
+#include "dds/DdsDcpsTypeSupportExtS.h"
 #include "tao/PortableServer/Basic_SArguments.h"
 #include "tao/PortableServer/Special_Basic_SArguments.h"
 #include "tao/PortableServer/Fixed_Size_SArgument_T.h"
@@ -58,6 +63,42 @@ namespace TAO
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
+
+// TAO_IDL - Generated from
+// be/be_visitor_module/module_sh.cpp:38
+
+namespace POA_builtin_interfaces
+{
+  
+
+  // TAO_IDL - Generated from
+  // be/be_visitor_module/module_sh.cpp:38
+
+  namespace msg
+  {
+    
+
+    // TAO_IDL - Generated from
+    // be/be_visitor_module/module_sh.cpp:38
+
+    namespace dds_
+    {
+      
+    
+    // TAO_IDL - Generated from
+    // be/be_visitor_module/module_sh.cpp:69
+
+    } // module builtin_interfaces::msg::dds_
+  
+  // TAO_IDL - Generated from
+  // be/be_visitor_module/module_sh.cpp:69
+
+  } // module builtin_interfaces::msg
+
+// TAO_IDL - Generated from
+// be/be_visitor_module/module_sh.cpp:69
+
+} // module builtin_interfaces
 
 #endif /* ifndef */
 

@@ -54,7 +54,7 @@ static TAO::TypeCode::Struct_Field<
       {
         { "pressure", &sensor_msgs::msg::dds_::_tc_FluidPressure_ },
         { "id", &CORBA::_tc_string },
-        { "depths", &CORBA::_tc_float }
+        { "depth", &CORBA::_tc_float }
       };
   
 static TAO::TypeCode::Struct<
@@ -378,7 +378,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
   return
     (strm << _tao_aggregate.pressure) &&
     (strm << _tao_aggregate.id.in ()) &&
-    (strm << _tao_aggregate.depths);
+    (strm << _tao_aggregate.depth);
 }
 
 ::CORBA::Boolean operator>> (
@@ -388,7 +388,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
   return
     (strm >> _tao_aggregate.pressure) &&
     (strm >> _tao_aggregate.id.out ()) &&
-    (strm >> _tao_aggregate.depths);
+    (strm >> _tao_aggregate.depth);
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL

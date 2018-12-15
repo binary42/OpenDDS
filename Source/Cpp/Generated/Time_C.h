@@ -28,8 +28,8 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:152
 
-#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__TIME_C_4KD3LM_H_
-#define _TAO_IDL____SOURCE_CPP_GENERATED__TIME_C_4KD3LM_H_
+#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__TIME_C_HOR7KE_H_
+#define _TAO_IDL____SOURCE_CPP_GENERATED__TIME_C_HOR7KE_H_
 
 
 #include /**/ "ace/config-all.h"

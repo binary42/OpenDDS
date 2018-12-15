@@ -9,7 +9,7 @@ module msg
 module dds_
 {
 
-
+#pragma DCPS_DATA_TYPE "sensor_msgs::msg::dds_::Fluidpressure_"
 
 
 struct FluidPressure_

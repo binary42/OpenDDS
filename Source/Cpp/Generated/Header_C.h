@@ -28,8 +28,8 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:152
 
-#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__HEADER_C_MXIWUZ_H_
-#define _TAO_IDL____SOURCE_CPP_GENERATED__HEADER_C_MXIWUZ_H_
+#ifndef _TAO_IDL____SOURCE_CPP_GENERATED__HEADER_C_9HKEET_H_
+#define _TAO_IDL____SOURCE_CPP_GENERATED__HEADER_C_9HKEET_H_
 
 
 #include /**/ "ace/config-all.h"
